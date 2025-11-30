@@ -52,18 +52,15 @@ section p { font-size:18px; max-width:800px; margin:0 auto 30px; }
     border-radius: 12px;
     max-width: 380px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    text-align: center;
+    text-align: left;
 }
-.rules-box h3 { font-size:28px; margin-bottom:20px; color: var(--primary-color); }
-.rules-box a {
-    font-size:18px;
-    color: var(--primary-color);
-    text-decoration:none;
-    font-weight:bold;
-    transition: color 0.3s;
-}
-.rules-box a:hover { color: #ff1a1a; }
-.rules-box .thank-you { margin-top:15px; font-style:italic; color:#ccc; font-size:16px; }
+.rules-box h3 { font-size:28px; margin-bottom:20px; color: var(--primary-color); text-align:center; }
+.rules-list { list-style:none; padding-left:0; }
+.rules-list li { margin:10px 0; font-size:18px; display:flex; align-items:center; }
+.rules-list li a { color:#fff; text-decoration:none; display:flex; align-items:center; }
+.rules-list li a:hover { color: var(--primary-color); }
+.rules-list li::before { content:"✔"; color: var(--primary-color); margin-right:10px; flex-shrink:0; }
+.rules-box .thank-you { margin-top:15px; font-style:italic; color:#ccc; font-size:16px; text-align:center; }
 
 /* Footer */
 footer { background:#000; padding:20px 0; text-align:center; }
@@ -77,5 +74,5 @@ footer .socials a img:hover { filter: brightness(0) invert(0.7); }
   .cards { flex-direction:column; align-items:center; }
   .hero h1 { font-size:36px; }
   .hero p { font-size:16px; }
-  .rules-box { width: 100%; max-width: 90%; }
+  .rules-box { width: 100%; max-width: 90%; text-align:center; }
 }
