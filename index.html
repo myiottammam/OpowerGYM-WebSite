@@ -30,7 +30,7 @@
 </section>
 
 <!-- About Section -->
-<section id="about">
+<section id="about" class="fade-in">
     <div class="container">
         <h2>About Us</h2>
         <p>Opower GYM is dedicated to helping you achieve your fitness goals with professional trainers and modern equipment. Our focus is on safety, motivation, and results!</p>
@@ -38,7 +38,7 @@
 </section>
 
 <!-- Services Section -->
-<section id="services">
+<section id="services" class="fade-in">
     <div class="container">
         <h2>Our Services</h2>
         <div class="cards">
@@ -59,12 +59,12 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact">
+<section id="contact" class="fade-in">
     <div class="container">
         <h2>Contact Us</h2>
         <p>Email: <a href="mailto:info@opowergym.com">info@opowergym.com</a></p>
-        <p>Phone: +968 1234 5678</p>
-        <a href="mailto:info@opowergym.com" class="btn">Send Email</a>
+        <p>Phone: +968 97543215 (WhatsApp)</p>
+        <a href="https://wa.me/96897543215" class="btn">Chat on WhatsApp</a>
     </div>
 </section>
 
@@ -73,21 +73,38 @@
     <div class="container">
         <p>&copy; 2025 Opower GYM. All rights reserved.</p>
         <div class="socials">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com/opower_gym_om" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/96897543215" target="_blank">
+                <img src="images/whatsapp.png" alt="WhatsApp">
+            </a>
         </div>
     </div>
 </footer>
 
-<!-- Smooth Scroll -->
+<!-- Smooth Scroll & Scroll Animations -->
 <script>
+// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+// Fade-in on scroll
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+    });
+}, appearOptions);
+faders.forEach(fader => fader.classList.add('fade-in'));
+faders.forEach(fader => appearOnScroll.observe(fader));
 </script>
 
 </body>
