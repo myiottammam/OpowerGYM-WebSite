@@ -7,71 +7,88 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <img src="images/logo.JPG" alt="Opower GYM Logo" class="logo">
-            <nav>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Welcome to Opower GYM</h1>
-            <p>Your fitness journey starts here!</p>
-            <a href="#contact" class="btn">Join Now</a>
-        </div>
-    </section>
+<!-- Header / Navbar -->
+<header>
+    <div class="container nav-container">
+        <img src="images/logo.JPG" alt="Opower GYM Logo" class="logo">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Opower GYM is dedicated to helping you achieve your fitness goals with professional trainers and modern equipment.</p>
-        </div>
-    </section>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay">
+        <h1>Welcome to Opower GYM</h1>
+        <p>Your fitness journey starts here!</p>
+        <a href="#contact" class="btn">Join Now</a>
+    </div>
+</section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Personal Training</h3>
-                    <p>Get one-on-one guidance from our expert trainers.</p>
-                </div>
-                <div class="card">
-                    <h3>Group Classes</h3>
-                    <p>Join fun and motivating fitness classes.</p>
-                </div>
-                <div class="card">
-                    <h3>Nutrition Plans</h3>
-                    <p>Customized meal plans to match your fitness goals.</p>
-                </div>
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Opower GYM is dedicated to helping you achieve your fitness goals with professional trainers and modern equipment. Our focus is on safety, motivation, and results!</p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Personal Training</h3>
+                <p>One-on-one coaching with expert trainers to reach your goals faster.</p>
+            </div>
+            <div class="card">
+                <h3>Group Classes</h3>
+                <p>Fun, high-energy classes for all levels of fitness.</p>
+            </div>
+            <div class="card">
+                <h3>Nutrition Plans</h3>
+                <p>Customized meal plans to complement your training routine.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Email: info@opowergym.com</p>
-            <p>Phone: +968 1234 5678</p>
-            <a href="mailto:info@opowergym.com" class="btn">Send Email</a>
-        </div>
-    </section>
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@opowergym.com">info@opowergym.com</a></p>
+        <p>Phone: +968 1234 5678</p>
+        <a href="mailto:info@opowergym.com" class="btn">Send Email</a>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            &copy; 2025 Opower GYM. All rights reserved.
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Opower GYM. All rights reserved.</p>
+        <div class="socials">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
         </div>
-    </footer>
+    </div>
+</footer>
+
+<!-- Smooth Scroll -->
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+});
+</script>
+
 </body>
 </html>
