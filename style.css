@@ -197,32 +197,19 @@ body {
 }
 
 .logo {
-  font-size: 1.75rem;
-  font-weight: 900;
-  text-decoration: none;
-  letter-spacing: 2px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  text-decoration: none;
 }
 
-.logo-main {
-  color: var(--text-light);
+.logo-img {
+  height: 60px;
+  width: auto;
+  transition: var(--transition);
 }
 
-.logo-accent {
-  color: var(--primary-red);
-  position: relative;
-}
-
-.logo-accent::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: var(--primary-gold);
+.navbar.scrolled .logo-img {
+  height: 50px;
 }
 
 .nav-menu {
@@ -321,7 +308,7 @@ body {
   min-height: 700px;
   display: flex;
   align-items: center;
-  background: url('https://images.unsplash.com/photo-1517963879466-e1b54ebd512d?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat fixed;
+  background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat fixed;
   overflow: hidden;
 }
 
@@ -353,6 +340,17 @@ body {
   max-width: 900px;
 }
 
+.hero-logo-container {
+  margin-bottom: 24px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-logo {
+  height: 180px;
+  width: auto;
+  filter: drop-shadow(0 4px 20px rgba(139, 0, 0, 0.5));
+}
+
 .hero-badge {
   display: inline-block;
   padding: 8px 20px;
@@ -365,6 +363,7 @@ body {
   color: var(--primary-gold);
   margin-bottom: 24px;
   text-transform: uppercase;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
 }
 
 .hero-title {
@@ -378,7 +377,7 @@ body {
 
 .title-line {
   display: block;
-  animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.8s ease-out 0.3s backwards;
 }
 
 .title-stroke {
@@ -394,14 +393,14 @@ body {
   max-width: 600px;
   font-weight: 300;
   letter-spacing: 0.5px;
-  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
 }
 
 .hero-buttons {
   display: flex;
   gap: 20px;
   margin-bottom: 60px;
-  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+  animation: fadeInUp 0.8s ease-out 0.5s backwards;
 }
 
 .hero-stats {
@@ -891,9 +890,13 @@ body {
 }
 
 .footer-logo {
-  font-size: 1.5rem;
-  font-weight: 900;
-  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-img {
+  height: 80px;
+  width: auto;
 }
 
 .footer-tagline {
@@ -947,6 +950,10 @@ body {
 
   .hero-title {
     font-size: 4.5rem;
+  }
+
+  .hero-logo {
+    height: 150px;
   }
 
   .about-grid {
@@ -1018,6 +1025,10 @@ body {
     min-height: 600px;
   }
 
+  .hero-logo {
+    height: 120px;
+  }
+
   .hero-title {
     font-size: 3rem;
   }
@@ -1079,11 +1090,19 @@ body {
     gap: 24px;
     text-align: center;
   }
+
+  .footer-logo-img {
+    height: 60px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .container {
     padding: 0 16px;
+  }
+
+  .hero-logo {
+    height: 100px;
   }
 
   .hero-title {
