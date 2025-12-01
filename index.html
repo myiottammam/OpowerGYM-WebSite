@@ -1,143 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Opower GYM</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opower GYM | Unleash Your Power</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Header -->
-<header>
-  <div class="container nav-container">
-    <img src="images/logo.JPG" alt="Opower GYM Logo" class="logo">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#rules">Gym Rules</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Opower<span>GYM</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#trainers">Trainers</a></li>
+                    <li><a href="#membership">Membership</a></li>
+                    <li><a href="#contact" class="btn-nav">Join Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-overlay">
-    <h1>Welcome to Opower GYM</h1>
-    <p>Your fitness journey starts here!</p>
-    <a href="#contact" class="btn">Join Now</a>
-  </div>
-</section>
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Build Your <span>Dream Body</span></h1>
+            <p>Professional training, world-class equipment, and a community that pushes you further.</p>
+            <a href="#membership" class="btn btn-primary">Get Started</a>
+            <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+    </section>
 
-<!-- About Section -->
-<section id="about" class="fade-in">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>Opower GYM is dedicated to helping you achieve your fitness goals with professional trainers and modern equipment. Our focus is on safety, motivation, and results!</p>
-  </div>
-</section>
+    <section id="about" class="section-padding">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gym Interior">
+            </div>
+            <div class="about-text">
+                <h2>Why Choose <span>Opower GYM</span>?</h2>
+                <p>We are not just a gym; we are a powerhouse of motivation. Whether you are a beginner or a pro athlete, our facility is designed to help you break limits.</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-check-circle"></i> State-of-the-art Equipment</li>
+                    <li><i class="fas fa-check-circle"></i> Certified Personal Trainers</li>
+                    <li><i class="fas fa-check-circle"></i> Flexible Membership Plans</li>
+                    <li><i class="fas fa-check-circle"></i> Clean & Spacious Environment</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<!-- Services Section -->
-<section id="services" class="fade-in">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Personal Training</h3>
-        <p>One-on-one coaching with expert trainers to reach your goals faster.</p>
-      </div>
-      <div class="card">
-        <h3>Group Classes</h3>
-        <p>Fun, high-energy classes for all levels of fitness.</p>
-      </div>
-      <div class="card">
-        <h3>Nutrition Plans</h3>
-        <p>Customized meal plans to complement your training routine.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <section id="classes" class="section-padding bg-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our <span>Classes</span></h2>
+                <p>Push your limits with our diverse training programs.</p>
+            </div>
+            <div class="classes-grid">
+                <div class="class-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Body Building</h3>
+                    <p>Build muscle and strength with our specialized weight training programs.</p>
+                </div>
+                <div class="class-card">
+                    <i class="fas fa-running"></i>
+                    <h3>Cardio & HIIT</h3>
+                    <p>Burn calories fast with high-intensity interval training sessions.</p>
+                </div>
+                <div class="class-card">
+                    <i class="fas fa-praying-hands"></i>
+                    <h3>Yoga & Stretch</h3>
+                    <p>Improve flexibility and recovery with our relaxing yoga classes.</p>
+                </div>
+                <div class="class-card">
+                    <i class="fas fa-fist-raised"></i>
+                    <h3>Boxing</h3>
+                    <p>Learn self-defense and get a full-body workout in our boxing ring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Gym Rules Section -->
-<section id="rules" class="fade-in">
-  <div class="container rules-container">
+    <section id="membership" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Membership <span>Plans</span></h2>
+                <p>Choose the plan that fits your goals.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Basic</h3>
+                    <div class="price">$29<span>/mo</span></div>
+                    <ul>
+                        <li>Access to Gym Equipment</li>
+                        <li>Locker Room Access</li>
+                        <li>Free Wi-Fi</li>
+                        <li class="disabled">Personal Trainer</li>
+                        <li class="disabled">Group Classes</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Select Plan</a>
+                </div>
+                <div class="price-card highlight">
+                    <div class="badge">Popular</div>
+                    <h3>Standard</h3>
+                    <div class="price">$49<span>/mo</span></div>
+                    <ul>
+                        <li>All Basic Features</li>
+                        <li>Access to Group Classes</li>
+                        <li>1 Personal Training Session</li>
+                        <li>Nutrition Guide</li>
+                        <li class="disabled">VIP Lounge Access</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Select Plan</a>
+                </div>
+                <div class="price-card">
+                    <h3>Premium</h3>
+                    <div class="price">$89<span>/mo</span></div>
+                    <ul>
+                        <li>All Standard Features</li>
+                        <li>Unlimited Personal Training</li>
+                        <li>VIP Lounge Access</li>
+                        <li>Sauna & Spa Access</li>
+                        <li>Free Gym Merchandise</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Select Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- English Rules -->
-    <div class="rules-box" dir="ltr">
-      <h3>Gym Rules</h3>
-      <ul class="rules-list">
-        <li><a href="https://rules.opowergym.com/" target="_blank">✔ Respect others and their space</a></li>
-        <li><a href="https://rules.opowergym.com/" target="_blank">✔ Use equipment properly</a></li>
-        <li><a href="https://rules.opowergym.com/" target="_blank">✔ Return equipment after use</a></li>
-        <li><a href="https://rules.opowergym.com/" target="_blank">✔ Keep the gym clean</a></li>
-      </ul>
-      <p class="thank-you">Thank you for following the rules and helping us keep Opower GYM safe and enjoyable!</p>
-    </div>
+    <section id="contact" class="section-padding bg-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact <span>Us</span></h2>
+                <p>Ready to start? Get in touch today.</p>
+            </div>
+            <div class="contact-wrapper">
+                <form class="contact-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea rows="5" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Fitness Street, Gym City, GC 45678</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (234) 567-890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@opowergym.com</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Arabic Rules -->
-    <div class="rules-box" dir="rtl">
-      <h3>قوانين الصالة الرياضية</h3>
-      <ul class="rules-list">
-        <li><a href="https://rules.opowergym.com/" target="_blank">✔ الاحترام بما تحمله الكلمة من معنى</a></li>
-        <li><a href="https://rules.opowergym.com/" target="_blank">✔ الاستخدام الصحيح للأجهزة والمرافق</a></li>
-        <li><a href="https://rules.opowergym.com/" target="_blank">✔ إعادة الأدوات إلى أماكنها بعد الاستخدام</a></li>
-        <li><a href="https://rules.opowergym.com/" target="_blank">✔ الحفاظ على نظافة الصالة</a></li>
-      </ul>
-      <p class="thank-you">شكراً لالتزامكم بالقوانين ومساعدتنا في الحفاظ على سلامة واستمتاع الجميع في صالة أوباور الرياضية!</p>
-    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Opower GYM. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-  </div>
-</section>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
 
-<!-- Contact Section -->
-<section id="contact" class="fade-in">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@opowergym.com">info@opowergym.com</a></p>
-    <p>Phone: +968 97543215 (WhatsApp)</p>
-    <a href="https://wa.me/96897543215" class="btn">Chat on WhatsApp</a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Opower GYM. All rights reserved.</p>
-    <div class="socials">
-      <a href="https://instagram.com/opower_gym_om" target="_blank">
-        <img src="images/instagram.png" alt="Instagram">
-      </a>
-      <a href="https://wa.me/96897543215" target="_blank">
-        <img src="images/whatsapp.png" alt="WhatsApp">
-      </a>
-    </div>
-  </div>
-</footer>
-
-<!-- Smooth Scroll & Scroll Animations -->
-<script>
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-// Fade-in on scroll
-const faders = document.querySelectorAll('.fade-in');
-const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
-const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add('appear');
-    observer.unobserve(entry.target);
-  });
-}, appearOptions);
-faders.forEach(fader => fader.classList.add('fade-in'));
-faders.forEach(fader => appearOnScroll.observe(fader));
-</script>
-
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
