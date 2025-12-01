@@ -3,190 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opower GYM | Unleash Your Power</title>
+    <title>Opower GYM | Push Harder, Train Smarter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <a href="#" class="logo">Opower<span>GYM</span></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#classes">Classes</a></li>
-                    <li><a href="#trainers">Trainers</a></li>
-                    <li><a href="#membership">Membership</a></li>
-                    <li><a href="#contact" class="btn-nav">Join Now</a></li>
-                </ul>
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">OPOWER <span class="text-red">GYM</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https://rules.opowergym.com/" target="_blank" class="btn-rules">📋 Rules / قوانين</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="animate-text">PUSH HARDER<br><span class="text-stroke">TRAIN SMARTER</span></h1>
+            <p class="hero-slogan">Welcome to Opower GYM. Where limits are broken and legends are made.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Join Now</a>
+                <a href="https://rules.opowergym.com/" target="_blank" class="btn btn-outline">Read Rules</a>
+            </div>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Build Your <span>Dream Body</span></h1>
-            <p>Professional training, world-class equipment, and a community that pushes you further.</p>
-            <a href="#membership" class="btn btn-primary">Get Started</a>
-            <a href="#about" class="btn btn-secondary">Learn More</a>
-        </div>
-    </section>
-
-    <section id="about" class="section-padding">
+    <section id="about" class="section">
         <div class="container about-grid">
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gym Interior">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop" alt="Gym Interior">
             </div>
             <div class="about-text">
-                <h2>Why Choose <span>Opower GYM</span>?</h2>
-                <p>We are not just a gym; we are a powerhouse of motivation. Whether you are a beginner or a pro athlete, our facility is designed to help you break limits.</p>
-                <ul class="features-list">
-                    <li><i class="fas fa-check-circle"></i> State-of-the-art Equipment</li>
-                    <li><i class="fas fa-check-circle"></i> Certified Personal Trainers</li>
-                    <li><i class="fas fa-check-circle"></i> Flexible Membership Plans</li>
-                    <li><i class="fas fa-check-circle"></i> Clean & Spacious Environment</li>
+                <h2 class="section-title">Who We <span class="text-red">Are</span></h2>
+                <p>Opower GYM is not just a place to workout; it's a sanctuary for transformation. We provide state-of-the-art equipment, elite personal training, and a motivating atmosphere designed to help you reach your peak physical potential.</p>
+                <ul class="about-features">
+                    <li><i class="fa-solid fa-check text-gold"></i> Professional Trainers</li>
+                    <li><i class="fa-solid fa-check text-gold"></i> Modern Equipment</li>
+                    <li><i class="fa-solid fa-check text-gold"></i> 24/7 Access</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="classes" class="section-padding bg-dark">
+    <section id="services" class="section bg-darker">
         <div class="container">
-            <div class="section-title">
-                <h2>Our <span>Classes</span></h2>
-                <p>Push your limits with our diverse training programs.</p>
-            </div>
-            <div class="classes-grid">
-                <div class="class-card">
-                    <i class="fas fa-dumbbell"></i>
-                    <h3>Body Building</h3>
-                    <p>Build muscle and strength with our specialized weight training programs.</p>
+            <h2 class="section-title text-center">Our <span class="text-red">Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-dumbbell service-icon"></i>
+                    <h3>Bodybuilding</h3>
+                    <p>Heavy weights and specialized machines to build muscle mass effectively.</p>
                 </div>
-                <div class="class-card">
-                    <i class="fas fa-running"></i>
-                    <h3>Cardio & HIIT</h3>
-                    <p>Burn calories fast with high-intensity interval training sessions.</p>
+                <div class="service-card">
+                    <i class="fa-solid fa-person-running service-icon"></i>
+                    <h3>Cardio & Fitness</h3>
+                    <p>Treadmills, rowers, and bikes to boost endurance and burn calories.</p>
                 </div>
-                <div class="class-card">
-                    <i class="fas fa-praying-hands"></i>
-                    <h3>Yoga & Stretch</h3>
-                    <p>Improve flexibility and recovery with our relaxing yoga classes.</p>
+                <div class="service-card">
+                    <i class="fa-solid fa-user-ninja service-icon"></i>
+                    <h3>Personal Training</h3>
+                    <p>One-on-one coaching tailored to your specific goals and body type.</p>
                 </div>
-                <div class="class-card">
-                    <i class="fas fa-fist-raised"></i>
-                    <h3>Boxing</h3>
-                    <p>Learn self-defense and get a full-body workout in our boxing ring.</p>
+                <div class="service-card">
+                    <i class="fa-solid fa-users service-icon"></i>
+                    <h3>Group Classes</h3>
+                    <p>High-energy classes including HIIT, Yoga, and CrossFit style training.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="membership" class="section-padding">
+    <section id="gallery" class="section">
         <div class="container">
-            <div class="section-title">
-                <h2>Membership <span>Plans</span></h2>
-                <p>Choose the plan that fits your goals.</p>
-            </div>
-            <div class="pricing-grid">
-                <div class="price-card">
-                    <h3>Basic</h3>
-                    <div class="price">$29<span>/mo</span></div>
-                    <ul>
-                        <li>Access to Gym Equipment</li>
-                        <li>Locker Room Access</li>
-                        <li>Free Wi-Fi</li>
-                        <li class="disabled">Personal Trainer</li>
-                        <li class="disabled">Group Classes</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Select Plan</a>
-                </div>
-                <div class="price-card highlight">
-                    <div class="badge">Popular</div>
-                    <h3>Standard</h3>
-                    <div class="price">$49<span>/mo</span></div>
-                    <ul>
-                        <li>All Basic Features</li>
-                        <li>Access to Group Classes</li>
-                        <li>1 Personal Training Session</li>
-                        <li>Nutrition Guide</li>
-                        <li class="disabled">VIP Lounge Access</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Select Plan</a>
-                </div>
-                <div class="price-card">
-                    <h3>Premium</h3>
-                    <div class="price">$89<span>/mo</span></div>
-                    <ul>
-                        <li>All Standard Features</li>
-                        <li>Unlimited Personal Training</li>
-                        <li>VIP Lounge Access</li>
-                        <li>Sauna & Spa Access</li>
-                        <li>Free Gym Merchandise</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Select Plan</a>
-                </div>
+            <h2 class="section-title text-center">The <span class="text-red">Arena</span></h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=800&auto=format&fit=crop" alt="Weights">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop" alt="Training">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=800&auto=format&fit=crop" alt="Gym Equipment">
+                <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=800&auto=format&fit=crop" alt="Cardio">
+                <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800&auto=format&fit=crop" alt="Heavy Lifting">
+                <img src="https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?q=80&w=800&auto=format&fit=crop" alt="Ropes">
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section-padding bg-dark">
+    <section id="contact" class="section bg-darker">
         <div class="container">
-            <div class="section-title">
-                <h2>Contact <span>Us</span></h2>
-                <p>Ready to start? Get in touch today.</p>
-            </div>
+            <h2 class="section-title text-center">Find <span class="text-red">Us</span></h2>
             <div class="contact-wrapper">
-                <form class="contact-form">
-                    <div class="input-group">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <input type="text" placeholder="Subject" required>
-                    <textarea rows="5" placeholder="Message"></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
                 <div class="contact-info">
                     <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>123 Fitness Street, Gym City, GC 45678</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Opower GYM Building, Main Street</p>
+                        </div>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+1 (234) 567-890</p>
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+123 456 7890</p>
+                        </div>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>info@opowergym.com</p>
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Fri: 6:00 AM - 11:00 PM</p>
+                            <p>Sat - Sun: 8:00 AM - 9:00 PM</p>
+                        </div>
                     </div>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+                    <a href="https://rules.opowergym.com/" target="_blank" class="btn btn-gold-outline" style="margin-top: 20px; display:inline-block; width:100%; text-align:center;">
+                        View Club Rules
+                    </a>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.9873196845941!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1622648782321!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Opower GYM. All Rights Reserved.</p>
+        <div class="container footer-content">
+            <p>&copy; 2023 Opower GYM. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
 
     <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('is-active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when link is clicked
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            menuToggle.classList.remove('is-active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Sticky Navbar on Scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('sticky', window.scrollY > 0);
         });
     </script>
 </body>
